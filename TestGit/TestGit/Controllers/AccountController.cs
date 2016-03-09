@@ -15,13 +15,13 @@ namespace TestGit.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]
-    public class AccountController : Controller
+    public class AccountController : Controller // I'm a cloned.
     {
         //
         // GET: /Account/Login
 
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login(string returnUrl) 
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
